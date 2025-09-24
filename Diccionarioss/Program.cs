@@ -10,14 +10,8 @@ namespace Diccionarioss
     {
         static void Main(string[] args)
         {
-            // Inicializa el objeto Acciones con nombre y matrícula específicos
-            Acciones acciones = new Acciones
-            {
-                Nombre = "Aldo",
-                Matricula = 113512
-            };
-            // Agrega el estudiante inicial al diccionario
-            acciones.Addstudents();
+            Acciones acciones = new Acciones ("Aldo", 113512);
+            acciones.mostrarconstructor();
 
             int opcion;
             do

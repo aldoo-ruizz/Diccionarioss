@@ -10,6 +10,11 @@ namespace Diccionarioss
     {
         public string Nombre { get; set; }
         public int Matricula { get; set; }
+        public Acciones (string nombre, int matricula)
+        {
+            Nombre = nombre;
+            Matricula = matricula;
+        }
 
         private Dictionary<string, string> diccionario = new Dictionary<string, string>();  
 
@@ -89,5 +94,10 @@ namespace Diccionarioss
         {
             Console.WriteLine($"Total de estudiantes: {diccionario.Count}");
         }
+        public void mostrarconstructor()
+        {
+            Console.WriteLine("Nombre: " + Nombre);
+            Console.WriteLine("Matricula: " + Matricula);
+        }   
     }
 }
